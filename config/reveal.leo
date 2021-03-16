@@ -22,6 +22,8 @@
 <v t="leo.20200818170535.1"><vh>slide 2</vh>
 <v t="leo.20210317002001.1"><vh>slide2-1</vh></v>
 <v t="leo.20210317002004.1"><vh>slide2-2</vh></v>
+<v t="leo.20210317010607.1"><vh>slide2-3</vh></v>
+<v t="leo.20210317011310.1"><vh>slide2-4</vh></v>
 </v>
 <v t="leo.20200818170636.1"><vh>slide3</vh>
 <v t="leo.20200818170909.1"><vh>slide 3-1</vh></v>
@@ -655,8 +657,19 @@ console.log( '"customevent" has fired' );
 &lt;/section&gt;
 </t>
 <t tx="leo.20210317002004.1">&lt;section&gt;
-&lt;p&gt;前陣子看文藝復興的影片,看澳投石車,於是我與組員討論出來的題目是投石車&lt;/p&gt;
-&lt;p&gt;&lt;link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet"&gt;&lt;/p&gt;
+&lt;h2&gt;標題&lt;/h2&gt;
+&lt;p&gt;前陣子看文藝復興的影片,看到投石車,於是我與組員討論出來的題目是投石車&lt;/p&gt;
+ &lt;p&gt;&lt;img src="https://github.com/40823123/cd2021/blob/main/images/%E4%B8%8B%E8%BC%89.jpg?raw=true" alt="" width="600" height="390"&gt;&lt;/p&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20210317010607.1">&lt;section&gt;
+&lt;h2&gt;組合圖&lt;/h2&gt;
+&lt;p&gt;我們先將初步畫完的圖組合起來丟到coppeliasim裡面看哪裡需要修改&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" height="188" src="/images/組合.png" width="394"&gt;&lt;/p&gt;
+&lt;/section&gt;</t>
+<t tx="leo.20210317011310.1">&lt;section&gt;
+&lt;h2&gt;圖檔影片及資料&lt;/h2&gt;
+&lt;p&gt;stl檔:&lt;a href="https://drive.google.com/drive/u/0/folders/1bNWk8o1UbAUWI554ASf9u7DNvenfFGik"&gt;https://drive.google.com/drive/u/0/folders/1bNWk8o1UbAUWI554ASf9u7DNvenfFGik&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;iframe width="560" height="315" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" src="https://www.youtube.com/embed/RjVcg4wXsw0"&gt;&lt;/iframe&gt;&lt;/p&gt;
 &lt;/section&gt;</t>
 </tnodes>
 </leo_file>
