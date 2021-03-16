@@ -656,6 +656,7 @@ console.log( '"customevent" has fired' );
 </t>
 <t tx="leo.20210317002004.1">&lt;section&gt;
 &lt;p&gt;前陣子看文藝復興的影片,看澳投石車,於是我與組員討論出來的題目是投石車&lt;/p&gt;
-&lt;p&gt;&lt;link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet"&gt;&lt;/p&gt;</t>
+&lt;p&gt;&lt;link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet"&gt;&lt;/p&gt;
+&lt;/section&gt;</t>
 </tnodes>
 </leo_file>
