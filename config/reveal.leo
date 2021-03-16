@@ -664,7 +664,7 @@ console.log( '"customevent" has fired' );
 <t tx="leo.20210317010607.1">&lt;section&gt;
 &lt;h2&gt;組合圖&lt;/h2&gt;
 &lt;p&gt;我們先將初步畫完的圖組合起來丟到coppeliasim裡面看哪裡需要修改&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" height="188" src="/images/組合.png" width="394"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" height="188" src="./../images/組合.png" width="394"/&gt;&lt;/p&gt;
 &lt;/section&gt;</t>
 <t tx="leo.20210317011310.1">&lt;section&gt;
 &lt;h2&gt;圖檔影片及資料&lt;/h2&gt;
