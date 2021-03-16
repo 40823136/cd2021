@@ -209,9 +209,9 @@ vertical: body pane on the botton</t>
 &lt;/div&gt;</t>
 <t tx="leo.20200818170328.1">&lt;section&gt;
     &lt;h2&gt;w1&lt;/h2&gt;
-    &lt;p&gt;
-       &lt;a href="https://40823123.github.io/cd2021/content/index.html"&gt;40823123&lt;/a&gt;
-       &lt;a href="https://40823136.github.io/cd2021/content/index.html"&gt;40823136&lt;/a&gt;
+    &lt;p&gt;小組組員
+       &lt;li&gt;&lt;a href="https://40823123.github.io/cd2021/content/index.html"&gt;40823123&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;&lt;a href="https://40823136.github.io/cd2021/content/index.html"&gt;40823136&lt;/a&gt;&lt;/li&gt;
     &lt;/p&gt;
 &lt;/section&gt;
 
