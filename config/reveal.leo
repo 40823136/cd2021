@@ -208,12 +208,11 @@ vertical: body pane on the botton</t>
     @others
 &lt;/div&gt;</t>
 <t tx="leo.20200818170328.1">&lt;section&gt;
-    &lt;a href="https://revealjs.com"&gt;
-        &lt;img src="https://static.slid.es/reveal/logo-v1/reveal-white-text.svg" alt="reveal.js logo" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo"&gt;
-    &lt;/a&gt;
-    &lt;h3&gt;The HTML Presentation Framework&lt;/h3&gt;
+    &lt;h2&gt;w1&lt;/h2&gt;
     &lt;p&gt;
-        &lt;small&gt;Created by &lt;a href="http://hakim.se"&gt;Hakim El Hattab&lt;/a&gt; and &lt;a href="https://github.com/hakimel/reveal.js/graphs/contributors"&gt;contributors&lt;/a&gt;&lt;/small&gt;
+       &lt;small&gt;
+       &lt;a href="https://40823123.github.io/cd2021/content/index.html"&gt;40823123&lt;/a&gt;
+       &lt;a href="https://40823136.github.io/cd2021/content/index.html"&gt;40823136&lt;/a&gt;
     &lt;/p&gt;
 &lt;/section&gt;
 
