@@ -18,7 +18,10 @@
 <v t="leo.20200818165413.1"><vh>body</vh>
 <v t="leo.20200818170041.1"><vh>reveal div</vh>
 <v t="leo.20200818170222.1"><vh>slides div</vh>
-<v t="leo.20200818170328.1"><vh>slide 1</vh></v>
+<v t="leo.20200818170328.1"><vh>slide 1</vh>
+<v t="leo.20210317125404.1"><vh>slide1-1</vh></v>
+<v t="leo.20210317125508.1"><vh>slide1-2</vh></v>
+</v>
 <v t="leo.20200818170535.1"><vh>slide 2</vh>
 <v t="leo.20210317002001.1"><vh>slide2-1</vh></v>
 <v t="leo.20210317002004.1"><vh>slide2-2</vh></v>
@@ -29,8 +32,11 @@
 <v t="leo.20200818170909.1"><vh>slide 3-1</vh></v>
 <v t="leo.20200818170953.1"><vh>slide 3-2</vh></v>
 <v t="leo.20200818171010.1"><vh>slide 3-3</vh></v>
+<v t="leo.20210317130953.1"><vh>slide3-4</vh></v>
 </v>
-<v t="leo.20200818170725.1"><vh>slide 4</vh></v>
+<v t="leo.20200818170725.1"><vh>slide 4</vh>
+<v t="leo.20210317132534.1"><vh>slide4-1</vh></v>
+</v>
 <v t="leo.20200818171138.1"><vh>slide 5 </vh></v>
 <v t="leo.20200818171215.1"><vh>slide 6</vh></v>
 <v t="leo.20200818171244.1"><vh>slide 7 </vh></v>
@@ -212,12 +218,9 @@ vertical: body pane on the botton</t>
 &lt;div class="slides"&gt;
     @others
 &lt;/div&gt;</t>
-<t tx="leo.20200818170328.1">&lt;section&gt;
-    &lt;h2&gt;w1&lt;/h2&gt;
-    &lt;p&gt;小組組員
-       &lt;li&gt;40823123:&lt;a href="https://40823123.github.io/cd2021/content/index.html"&gt;網站&lt;/a&gt; &lt;a href="https://github.com/40823123/cd2021"&gt;倉儲&lt;/a&gt;&lt;/li&gt;
-       &lt;li&gt;40823136:&lt;a href="https://40823136.github.io/cd2021/content/index.html"&gt;網站&lt;/a&gt;&lt;a href="https://github.com/40823136/cd202l"&gt;倉儲&lt;/a&gt;&lt;/li&gt;
-    &lt;/p&gt;
+<t tx="leo.20200818170328.1">&lt;!--Example of nested vertical slides --&gt;
+&lt;section&gt;
+    @others
 &lt;/section&gt;
 
 </t>
@@ -234,35 +237,28 @@ vertical: body pane on the botton</t>
 
 </t>
 <t tx="leo.20200818170725.1">&lt;section&gt;
-    &lt;h2&gt;Slides&lt;/h2&gt;
-    &lt;p&gt;
-        Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at &lt;a href="https://slides.com" target="_blank"&gt;https://slides.com&lt;/a&gt;.
-    &lt;/p&gt;
+   @others
 &lt;/section&gt;
 
 </t>
 <t tx="leo.20200818170909.1">&lt;section&gt;
-    &lt;h2&gt;Vertical Slides&lt;/h2&gt;
-    &lt;p&gt;Slides can be nested inside of each other.&lt;/p&gt;
-    &lt;p&gt;Use the &lt;em&gt;Space&lt;/em&gt; key to navigate through all slides.&lt;/p&gt;
-    &lt;br&gt;
-    &lt;a href="#" class="navigate-down"&gt;
-        &lt;img class="r-frame" style="background: rgba(255,255,255,0.1);" width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Down arrow"&gt;
-    &lt;/a&gt;
+    &lt;h2&gt;w3&lt;/h2&gt;
+    
 &lt;/section&gt;
 </t>
 <t tx="leo.20200818170953.1">&lt;section&gt;
-    &lt;h2&gt;Basement Level 1&lt;/h2&gt;
-    &lt;p&gt;Nested slides are useful for adding additional detail underneath a high level horizontal slide.&lt;/p&gt;
+    &lt;h2&gt;coppeliasim第一次測試&lt;/h2&gt;
+    &lt;p&gt;第一次測試發現轉動時輪胎軸心會卡死所以在第二版在各個輪子加裝馬達&lt;/p&gt;
+    &lt;p&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/UNmER-RUnDk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
 &lt;/section&gt;
 </t>
 <t tx="leo.20200818171010.1">&lt;section&gt;
-    &lt;h2&gt;Basement Level 2&lt;/h2&gt;
-    &lt;p&gt;That's it, time to go back up.&lt;/p&gt;
-    &lt;br&gt;
-    &lt;a href="#/2"&gt;
-        &lt;img class="r-frame" style="background: rgba(255,255,255,0.1); transform: rotate(180deg);" width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Up arrow"&gt;
-    &lt;/a&gt;
+     &lt;h2&gt;coppeliasim第二次測試&lt;/h2&gt;
+    &lt;p&gt;在第二版加裝4個馬達模擬時又發現會傾斜45度,於是在跟隊友討論如何修改.&lt;/p&gt;
+    &lt;p&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/-oP7XRFrqdI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;&lt;p&gt;
+    
+   
+    
 &lt;/section&gt;</t>
 <t tx="leo.20200818171138.1">&lt;section data-auto-animate&gt;
     &lt;h2 data-id="code-title"&gt;Pretty Code&lt;/h2&gt;
@@ -664,12 +660,37 @@ console.log( '"customevent" has fired' );
 <t tx="leo.20210317010607.1">&lt;section&gt;
 &lt;h2&gt;組合圖&lt;/h2&gt;
 &lt;p&gt;我們先將初步畫完的圖組合起來丟到coppeliasim裡面看哪裡需要修改&lt;/p&gt;
-&lt;p&gt;&lt;img alt="" height="188" src="./../images/組合.png" width="394"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" height="200" src="./../images/組合.png" width="450"/&gt;&lt;/p&gt;
 &lt;/section&gt;</t>
 <t tx="leo.20210317011310.1">&lt;section&gt;
 &lt;h2&gt;圖檔影片及資料&lt;/h2&gt;
-&lt;p&gt;stl檔:&lt;a href="https://drive.google.com/drive/u/0/folders/1bNWk8o1UbAUWI554ASf9u7DNvenfFGik"&gt;https://drive.google.com/drive/u/0/folders/1bNWk8o1UbAUWI554ASf9u7DNvenfFGik&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;stl檔: &lt;/p&gt;
+ &lt;p&gt;&lt;a href="https://drive.google.com/drive/u/0/folders/1bNWk8o1UbAUWI554ASf9u7DNvenfFGik"&gt;https://drive.google.com/drive/u/0/folders/1bNWk8o1UbAUWI554ASf9u7DNvenfFGik&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;iframe width="560" height="315" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" src="https://www.youtube.com/embed/RjVcg4wXsw0"&gt;&lt;/iframe&gt;&lt;/p&gt;
 &lt;/section&gt;</t>
+<t tx="leo.20210317125404.1">&lt;section&gt;
+    &lt;h2&gt;w1&lt;/h2&gt;
+    &lt;p&gt;小組組員
+       &lt;li&gt;40823123:&lt;a href="https://40823123.github.io/cd2021/content/index.html"&gt;網站&lt;/a&gt; &lt;a href="https://github.com/40823123/cd2021"&gt;倉儲&lt;/a&gt;&lt;/li&gt;
+       &lt;li&gt;40823136:&lt;a href="https://40823136.github.io/cd2021/content/index.html"&gt;網站&lt;/a&gt;&lt;a href="https://github.com/40823136/cd202l" &gt;倉儲&lt;/a&gt;&lt;/li&gt;
+    &lt;/p&gt;
+&lt;/section&gt;
+</t>
+<t tx="leo.20210317125508.1">&lt;section&gt;
+    &lt;h2&gt;任務分工&lt;/h2&gt;
+     &lt;p&gt;我負責的部分是畫圖跟城市模擬,-而我隊友負責構想機構跟畫圖 &lt;/p&gt;
+      </t>
+<t tx="leo.20210317130953.1">&lt;section&gt;
+     &lt;h2&gt;coppeliasim第3次測試&lt;/h2&gt;
+      &lt;p&gt;而第三次測試終於成功,我發先會傾斜有兩個原因&lt;/p&gt;
+      &lt;li&gt;後輪軸心沒拘束倒置往下沉&lt;/li&gt;
+      &lt;li&gt;輪子的質量沒給導致會呈現45度角在運動&lt;/li&gt;
+      &lt;p&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/snKEWHJCqYo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+      &lt;/p&gt;</t>
+<t tx="leo.20210317132534.1">&lt;section&gt;
+    &lt;h2&gt;w3&lt;/h2&gt;
+    
+&lt;/section&gt;
+</t>
 </tnodes>
 </leo_file>
