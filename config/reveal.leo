@@ -70,7 +70,6 @@
 <v t="leo.20200818195643.1"><vh>slide 26</vh></v>
 <v t="leo.20200818195701.1"><vh>slide 27</vh></v>
 <v t="leo.20200818195715.1"><vh>slide 28</vh></v>
-<v t="leo.20200818195731.1"><vh>slide 29</vh></v>
 <v t="leo.20200818195748.1"><vh>slide 30</vh></v>
 <v t="leo.20200818195800.1"><vh>slide 31</vh></v>
 </v>
@@ -617,14 +616,6 @@ console.log( '"customevent" has fired' );
 &lt;/section&gt;
 
 </t>
-<t tx="leo.20200818195731.1">&lt;section&gt;
-    &lt;h2&gt;Take a Moment&lt;/h2&gt;
-    &lt;p&gt;
-        Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-    &lt;/p&gt;
-&lt;/section&gt;
-
-</t>
 <t tx="leo.20200818195748.1">&lt;section&gt;
     &lt;h2&gt;Much more&lt;/h2&gt;
     &lt;ul&gt;
@@ -670,7 +661,7 @@ console.log( '"customevent" has fired' );
 &lt;h2&gt;w1&lt;/h2&gt;
  &lt;p&gt;小組組員
 &lt;li&gt;40823123:&lt;a href="https://40823123.github.io/cd2021/content/index.html"&gt;網站&lt;/a&gt; &lt;a href="https://github.com/40823123/cd2021"&gt;倉儲&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;40823136:&lt;a href="https://40823136.github.io/cd2021/content/index.html"&gt;網站&lt;/a&gt;&lt;a href="https://github.com/40823136/cd202l"&gt;倉儲&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;40823136:&lt;a href="https://40823136.github.io/cd2021/content/index.html"&gt;網站&lt;/a&gt; &lt;a href="https://github.com/40823136/cd202l"&gt;倉儲&lt;/a&gt;&lt;/li&gt;
 &lt;/p&gt;
 &lt;/section&gt;
 </t>
