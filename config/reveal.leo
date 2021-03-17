@@ -65,7 +65,6 @@
 <v t="leo.20200818195502.1"><vh>slide 21</vh></v>
 <v t="leo.20200818195520.1"><vh>slide 22</vh></v>
 <v t="leo.20200818195541.1"><vh>slide 23</vh></v>
-<v t="leo.20200818195604.1"><vh>slide 24</vh></v>
 <v t="leo.20200818195625.1"><vh>slide 25</vh></v>
 <v t="leo.20200818195643.1"><vh>slide 26</vh></v>
 <v t="leo.20200818195701.1"><vh>slide 27</vh></v>
@@ -566,15 +565,6 @@ vertical: body pane on the botton</t>
         reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&amp;rdquo;
     &lt;/blockquote&gt;
 &lt;/section&gt;
-</t>
-<t tx="leo.20200818195604.1">&lt;section&gt;
-    &lt;h2&gt;Intergalactic Interconnections&lt;/h2&gt;
-    &lt;p&gt;
-        You can link between slides internally,
-        &lt;a href="#/2/3"&gt;like this&lt;/a&gt;.
-    &lt;/p&gt;
-&lt;/section&gt;
-
 </t>
 <t tx="leo.20200818195625.1">&lt;section&gt;
     &lt;h2&gt;Speaker View&lt;/h2&gt;
