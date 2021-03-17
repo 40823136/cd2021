@@ -668,20 +668,21 @@ console.log( '"customevent" has fired' );
 <t tx="leo.20210317011310.1">&lt;section&gt;
 &lt;h2&gt;圖檔影片及資料&lt;/h2&gt;
 &lt;p&gt;stl檔: &lt;/p&gt;
- &lt;p&gt;&lt;a href="https://drive.google.com/drive/u/0/folders/1bNWk8o1UbAUWI554ASf9u7DNvenfFGik"&gt;https://drive.google.com/drive/u/0/folders/1bNWk8o1UbAUWI554ASf9u7DNvenfFGik&lt;/a&gt;&lt;/p&gt;
+ &lt;a href="https://drive.google.com/drive/u/0/folders/1bNWk8o1UbAUWI554ASf9u7
+DNvenfFGik"&gt;https://drive.google.com/drive/u/0/folders/1bNWk8o1UbAUWI554ASf9u7DNvenfFGik&gt;STL檔&lt;/a&gt; 
 &lt;p&gt;&lt;iframe width="560" height="315" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" src="https://www.youtube.com/embed/RjVcg4wXsw0"&gt;&lt;/iframe&gt;&lt;/p&gt;
 &lt;/section&gt;</t>
 <t tx="leo.20210317125404.1">&lt;section&gt;
 &lt;h2&gt;w1&lt;/h2&gt;
  &lt;p&gt;小組組員
-&lt;li&gt;40823123:&lt;a href="https://40823123.github.io/cd2021/content/index.html"&gt;網站&lt;/a&gt; &lt;a href="https://github.com/40823123/cd2021"&gt;倉儲&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;40823136:&lt;a href="https://40823136.github.io/cd2021/content/index.html"&gt;網站&lt;/a&gt;&lt;a href="https://github.com/40823136/cd202l" &gt;倉儲&lt;/a&gt;&lt;/li&gt;
-&lt;/p&gt;
+ &lt;li&gt;40823123:&lt;a href="https://40823123.github.io/cd2021/content/index.html"&gt;網站&lt;/a&gt; &lt;a href="https://github.com/40823123/cd2021"&gt;倉儲&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;40823136:&lt;a href="https://40823136.github.io/cd2021/content/index.html"&gt;網站&lt;/a&gt;&lt;a href="https://github.com/40823136/cd202l"&gt;倉儲&lt;/a&gt;&lt;/li&gt;
+&lt;/p&gt;4
 &lt;/section&gt;
 </t>
 <t tx="leo.20210317125508.1">&lt;section&gt;
     &lt;h2&gt;任務分工&lt;/h2&gt;
-     &lt;p&gt;我負責的部分是畫圖跟城市模擬,-而我隊友負責構想機構跟畫圖 &lt;/p&gt;
+     &lt;p&gt;我負責的部分是畫圖跟程式模擬,-而我隊友負責構想機構跟畫圖 &lt;/p&gt;
       &lt;/section&gt;</t>
 <t tx="leo.20210317130953.1">&lt;section&gt;
      &lt;h2&gt;coppeliasim第3次測試&lt;/h2&gt;
@@ -692,8 +693,10 @@ console.log( '"customevent" has fired' );
       &lt;/p&gt;
       &lt;/section&gt;</t>
 <t tx="leo.20210317132534.1">&lt;section&gt;
-    &lt;h2&gt;w4&lt;/h2&gt;
-    
+&lt;h2&gt;w4&lt;/h2&gt;
+ &lt;a href="#" class="navigate-down"&gt;
+ &lt;img class="r-frame" style="background: rgba(255,255,255,0.1);" width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Down arrow"&gt;
+ &lt;/a&gt;       
 &lt;/section&gt;
 </t>
 <t tx="leo.20210317134447.1">&lt;section&gt;
