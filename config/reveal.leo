@@ -679,14 +679,15 @@ console.log( '"customevent" has fired' );
 <t tx="leo.20210317125508.1">&lt;section&gt;
     &lt;h2&gt;任務分工&lt;/h2&gt;
      &lt;p&gt;我負責的部分是畫圖跟城市模擬,-而我隊友負責構想機構跟畫圖 &lt;/p&gt;
-      </t>
+      &lt;/section&gt;</t>
 <t tx="leo.20210317130953.1">&lt;section&gt;
      &lt;h2&gt;coppeliasim第3次測試&lt;/h2&gt;
       &lt;p&gt;而第三次測試終於成功,我發先會傾斜有兩個原因&lt;/p&gt;
       &lt;li&gt;後輪軸心沒拘束倒置往下沉&lt;/li&gt;
       &lt;li&gt;輪子的質量沒給導致會呈現45度角在運動&lt;/li&gt;
       &lt;p&gt;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/snKEWHJCqYo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
-      &lt;/p&gt;</t>
+      &lt;/p&gt;
+      &lt;/section&gt;</t>
 <t tx="leo.20210317132534.1">&lt;section&gt;
     &lt;h2&gt;w3&lt;/h2&gt;
     
