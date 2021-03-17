@@ -661,7 +661,7 @@ console.log( '"customevent" has fired' );
 &lt;h2&gt;w1&lt;/h2&gt;
  &lt;p&gt;小組組員
 &lt;li&gt;40823123:&lt;a href="https://40823123.github.io/cd2021/content/index.html"&gt;網站&lt;/a&gt; &lt;a href="https://github.com/40823123/cd2021"&gt;倉儲&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;40823136:&lt;a href="https://40823136.github.io/cd2021/content/index.html"&gt;網站&lt;/a&gt; &lt;a href="https://github.com/40823136/cd202l"&gt;倉儲&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;40823136:&lt;a href="https://40823136.github.io/cd2021/content/index.html"&gt;網站&lt;/a&gt; &lt;a href="https://github.com/40823136/cd2021"&gt;倉儲&lt;/a&gt;&lt;/li&gt;
 &lt;/p&gt;
 &lt;/section&gt;
 </t>
