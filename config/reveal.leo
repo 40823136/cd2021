@@ -57,7 +57,6 @@
 <v t="leo.20200818195237.1"><vh>slide 16-2</vh></v>
 <v t="leo.20200818195305.1"><vh>slide 16-3</vh></v>
 <v t="leo.20200818195323.1"><vh>slide 16-4</vh></v>
-<v t="leo.20200818195339.1"><vh>slide 16-5</vh></v>
 </v>
 <v t="leo.20200818195147.1"><vh>slide 17</vh></v>
 <v t="leo.20200818195403.1"><vh>slide 18</vh></v>
@@ -490,9 +489,6 @@ vertical: body pane on the botton</t>
     &lt;/div&gt;
 &lt;/section&gt;
 </t>
-<t tx="leo.20200818195339.1">&lt;section data-background="http://i.giphy.com/90F8aUepslB84.gif"&gt;
-    &lt;h2&gt;... and GIFs!&lt;/h2&gt;
-&lt;/section&gt;</t>
 <t tx="leo.20200818195403.1">&lt;section data-transition="slide" data-background="#b5533c" data-background-transition="zoom"&gt;
     &lt;h2&gt;Background Transitions&lt;/h2&gt;
     &lt;p&gt;
