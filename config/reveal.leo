@@ -667,14 +667,13 @@ console.log( '"customevent" has fired' );
 &lt;/section&gt;</t>
 <t tx="leo.20210317011310.1">&lt;section&gt;
 &lt;h2&gt;圖檔影片及資料&lt;/h2&gt;
-&lt;p&gt;stl檔: &lt;/p&gt;
 &lt;p&gt;&lt;a href="https://drive.google.com/drive/u/0/folders/1LEC6oQ8GNH74uakIbjCPXtFzB-8zmvcE"&gt;STL檔&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;iframe width="560" height="315" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" src="https://www.youtube.com/embed/RjVcg4wXsw0"&gt;&lt;/iframe&gt;&lt;/p&gt;
 &lt;/section&gt;</t>
 <t tx="leo.20210317125404.1">&lt;section&gt;
 &lt;h2&gt;w1&lt;/h2&gt;
  &lt;p&gt;小組組員
- &lt;li&gt;40823123:&lt;a href="https://40823123.github.io/cd2021/content/index.html"&gt;網站&lt;/a&gt; &lt;a href="https://github.com/40823123/cd2021"&gt;倉儲&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;40823123:&lt;a href="https://40823123.github.io/cd2021/content/index.html"&gt;網站&lt;/a&gt; &lt;a href="https://github.com/40823123/cd2021"&gt;倉儲&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;40823136:&lt;a href="https://40823136.github.io/cd2021/content/index.html"&gt;網站&lt;/a&gt;&lt;a href="https://github.com/40823136/cd202l"&gt;倉儲&lt;/a&gt;&lt;/li&gt;
 &lt;/p&gt;
 &lt;/section&gt;
