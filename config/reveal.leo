@@ -32,10 +32,11 @@
 <v t="leo.20200818170909.1"><vh>slide 3-1</vh></v>
 <v t="leo.20200818170953.1"><vh>slide 3-2</vh></v>
 <v t="leo.20200818171010.1"><vh>slide 3-3</vh></v>
-<v t="leo.20210317130953.1"><vh>slide3-4</vh></v>
+<v t="leo.20210317130953.1"><vh>slide 3-4</vh></v>
 </v>
 <v t="leo.20200818170725.1"><vh>slide 4</vh>
 <v t="leo.20210317132534.1"><vh>slide4-1</vh></v>
+<v t="leo.20210317134447.1"><vh>slide4-2</vh></v>
 </v>
 <v t="leo.20200818171138.1"><vh>slide 5 </vh></v>
 <v t="leo.20200818171215.1"><vh>slide 6</vh></v>
@@ -242,8 +243,10 @@ vertical: body pane on the botton</t>
 
 </t>
 <t tx="leo.20200818170909.1">&lt;section&gt;
-    &lt;h2&gt;w3&lt;/h2&gt;
-    
+&lt;h2&gt;w3&lt;/h2&gt;
+&lt;a href="#" class="navigate-down"&gt;
+ &lt;img class="r-frame" style="background: rgba(255,255,255,0.1);" width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Down arrow"&gt;
+ &lt;/a&gt;    
 &lt;/section&gt;
 </t>
 <t tx="leo.20200818170953.1">&lt;section&gt;
@@ -669,11 +672,11 @@ console.log( '"customevent" has fired' );
 &lt;p&gt;&lt;iframe width="560" height="315" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" src="https://www.youtube.com/embed/RjVcg4wXsw0"&gt;&lt;/iframe&gt;&lt;/p&gt;
 &lt;/section&gt;</t>
 <t tx="leo.20210317125404.1">&lt;section&gt;
-    &lt;h2&gt;w1&lt;/h2&gt;
-    &lt;p&gt;小組組員
-       &lt;li&gt;40823123:&lt;a href="https://40823123.github.io/cd2021/content/index.html"&gt;網站&lt;/a&gt; &lt;a href="https://github.com/40823123/cd2021"&gt;倉儲&lt;/a&gt;&lt;/li&gt;
-       &lt;li&gt;40823136:&lt;a href="https://40823136.github.io/cd2021/content/index.html"&gt;網站&lt;/a&gt;&lt;a href="https://github.com/40823136/cd202l" &gt;倉儲&lt;/a&gt;&lt;/li&gt;
-    &lt;/p&gt;
+&lt;h2&gt;w1&lt;/h2&gt;
+ &lt;p&gt;小組組員
+&lt;li&gt;40823123:&lt;a href="https://40823123.github.io/cd2021/content/index.html"&gt;網站&lt;/a&gt; &lt;a href="https://github.com/40823123/cd2021"&gt;倉儲&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;40823136:&lt;a href="https://40823136.github.io/cd2021/content/index.html"&gt;網站&lt;/a&gt;&lt;a href="https://github.com/40823136/cd202l" &gt;倉儲&lt;/a&gt;&lt;/li&gt;
+&lt;/p&gt;
 &lt;/section&gt;
 </t>
 <t tx="leo.20210317125508.1">&lt;section&gt;
@@ -689,7 +692,14 @@ console.log( '"customevent" has fired' );
       &lt;/p&gt;
       &lt;/section&gt;</t>
 <t tx="leo.20210317132534.1">&lt;section&gt;
-    &lt;h2&gt;w3&lt;/h2&gt;
+    &lt;h2&gt;w4&lt;/h2&gt;
+    
+&lt;/section&gt;
+</t>
+<t tx="leo.20210317134447.1">&lt;section&gt;
+    &lt;h2&gt;產品設計報告&lt;/h2&gt;
+     &lt;p&gt;&lt;iframe height="550" src="https://drive.google.com/file/d/1BlcDNj58LyIoC8g5-watsF_PmFCRPkbv/preview" width="1000"&gt;&lt;/iframe&gt;&lt;/p&gt;
+
     
 &lt;/section&gt;
 </t>
