@@ -1,4 +1,6 @@
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"></pre>
 <h1>First</h1>
+<br/><br/>First
 <h1>About</h1>
 <p>This is <a href="https://github.com/mdecourse/cmstemplate">https://github.com/mdecourse/cmstemplate</a></p>
 <p>目前的 cmsimde 在編輯器下方新增一個 csave 按鈕, 意即 collabrative save, 當動態網際管理系統在多人同時維護登入維護網頁內容時, 編輯各頁面時段, 該頁面可能已經改版, 因此使用 csave 按鈕存檔時, 會導入當下最新的該頁面內容, 並試圖與編輯中的頁面內容進行合併.</p>
@@ -173,3 +175,37 @@ for i in range(len(data)):
 <p>40823149 | Website:<a href="https://40823149.github.io/cd2021">40823149</a> | Repository:<a href="https://github.com/40823149/cd2021">40823149</a> | Group Website:<a href="https://40823149.github.io/stage3-ag6">40823149</a></p>
 <p>40823153 | Website:<a href="https://40823153.github.io/cd2021">40823153</a> | Repository:<a href="https://github.com/40823153/cd2021">40823153</a> | Group Website:<a href="https://40823153.github.io/stage3-ag6">40823153</a></p>
 <p></p>
+<h2>task2</h2>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/cvEFvUINdog" title="YouTube video player" width="560"></iframe></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import sim as vrep
+import sys
+# child threaded script: 
+#simExtRemoteApiStart(19999)
+ 
+vrep.simxFinish(-1)
+ 
+clientID = vrep.simxStart('127.0.0.1', 19999, True, True, 5000, 5)
+ 
+if clientID!= -1:
+    print("Connected to remote server")
+else:
+    print('Connection not successful')
+    sys.exit('Could not connect')
+ 
+errorCode, handle1=vrep.simxGetObjectHandle(clientID,'cd1',vrep.simx_opmode_oneshot_wait)
+error_Code,handle2=vrep.simxGetObjectHandle(clientID,'cd2',vrep.simx_opmode_oneshot_wait) 
+errorCode,handle3=vrep.simxGetObjectHandle(clientID,'cd3',vrep.simx_opmode_oneshot_wait)
+errorCode,handle4=vrep .simxGetObjectHandle(clientID,'cd4',vrep.simx_opmode_oneshot_wait)
+errorCode,handle5=vrep.simxGetObjectHandle(clientID,'cd5',vrep.simx_opmode_oneshot_wait)
+
+if errorCode == -1:
+    print('Can not find left or right motor')
+    sys.exit()
+ 
+errorCode=vrep.simxSetJointTargetVelocity(clientID,handle1,1, vrep.simx_opmode_oneshot_wait)
+errorCode=vrep.simxSetJointTargetVelocity(clientID,handle2,0, vrep.simx_opmode_oneshot_wait)
+errorCode=vrep.simxSetJointTargetVelocity(clientID,handle3,1, vrep.simx_opmode_oneshot_wait)
+errorCode=vrep.simxSetJointTargetVelocity(clientID,handle4,0, vrep.simx_opmode_oneshot_wait)
+errorCode=vrep.simxSetJointTargetVelocity(clientID,handle5,0.02, vrep.simx_opmode_oneshot_wait)
+
+</pre>
