@@ -122,7 +122,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='First.html'>First</a><li><a href='About.html'>About</a><li class='has-children'><a href='w1.html'>w1</a><ul class='dropdown'><li><a href='建立網頁.html'>建立網頁</a><li><a href='編輯leo.html'>編輯leo</a></li></ul><li class='has-children'><a href='w2.html'>w2</a><ul class='dropdown'><li><a href='討論與影片.html'>討論與影片</a><li><a href='圖檔.html'>圖檔</a></li></ul><li class='has-children'><a href='w3.html'>w3</a><ul class='dropdown'><li><a href='投石機(1).html'>投石機(1)</a><li><a href='投石機(2).html'>投石機(2)</a><li><a href='投石機(3).html'>投石機(3)</a></li></ul><li class='has-children'><a href='w5.html'>w5</a><ul class='dropdown'><li><a href='stage2組員.html'>stage2組員</a></li></ul><li class='has-children'><a href='w6.html'>w6</a><ul class='dropdown'><li><a href='heroku.html'>heroku</a><li><a href='選訂題目.html'>選訂題目</a></li></ul><li class='has-children'><a href='w7.html'>w7</a><ul class='dropdown'><li><a href='自動化生產線(1)-用程式控制機械手臂與調整.html'>自動化生產線(1)-用程式控制機械手臂與調整</a></li></ul><li class='has-children'><a href='w8.html'>w8</a><ul class='dropdown'><li><a href='自動化生產線(2).html'>自動化生產線(2)</a></li></ul><li class='has-children'><a href='w9.html'>w9</a><ul class='dropdown'><li><a href='自動化生產線(3)最終版.html'>自動化生產線(3)最終版</a></li></ul><li class='has-children'><a href='w10.html'>w10</a><ul class='dropdown'><li><a href='task1.html'>task1</a><li><a href='task2.html'>task2</a></li>
+                     <li><a href='First.html'>First</a><li><a href='About.html'>About</a><li class='has-children'><a href='stage1.html'>stage1</a><ul class='dropdown'><li class='has-children'><a href='w1.html'>w1</a><ul class='dropdown'><li><a href='建立網頁.html'>建立網頁</a><li><a href='編輯leo.html'>編輯leo</a></li></ul><li class='has-children'><a href='w2.html'>w2</a><ul class='dropdown'><li><a href='討論與影片.html'>討論與影片</a><li><a href='圖檔.html'>圖檔</a></li></ul><li class='has-children'><a href='w3.html'>w3</a><ul class='dropdown'><li><a href='投石機(1).html'>投石機(1)</a><li><a href='投石機(2).html'>投石機(2)</a><li><a href='投石機(3).html'>投石機(3)</a></li></li></ul></ul><li class='has-children'><a href='stage2.html'>stage2</a><ul class='dropdown'><li class='has-children'><a href='w5.html'>w5</a><ul class='dropdown'><li><a href='stage2組員.html'>stage2組員</a></li></ul><li class='has-children'><a href='w6.html'>w6</a><ul class='dropdown'><li><a href='heroku.html'>heroku</a><li><a href='選訂題目.html'>選訂題目</a></li></ul><li class='has-children'><a href='w7.html'>w7</a><ul class='dropdown'><li><a href='自動化生產線(1)-用程式控制機械手臂與調整.html'>自動化生產線(1)-用程式控制機械手臂與調整</a></li></ul><li class='has-children'><a href='w8.html'>w8</a><ul class='dropdown'><li><a href='自動化生產線(2).html'>自動化生產線(2)</a></li></ul><li class='has-children'><a href='w9.html'>w9</a><ul class='dropdown'><li><a href='自動化生產線(3)最終版.html'>自動化生產線(3)最終版</a></li></li></ul></ul><li class='has-children'><a href='stage3.html'>stage3</a><ul class='dropdown'><li class='has-children'><a href='w10.html'>w10</a><ul class='dropdown'><li><a href='task1.html'>task1</a><li><a href='task2.html'>task2</a></li>
                       </ul>
                 </nav>
               </div>
@@ -151,67 +151,68 @@ for i in range(len(data)):
     group = data[i].rstrip("\n").split("\t") 
     #先取出data list中的第i項,消除元素中/n ,再找出新的元素
     print('&lt;p&gt;'+group[0]+' | &lt;a href="https://'+group[1]+'.github.io/stage3-ag'+group[0][9]+'"&gt;Website&lt;/a&gt; | &lt;a href="https://github.com/'+group[2]+'/stage3-ag'+group[0][9]+'"&gt;Repository&lt;/a&gt;&lt;/p&gt;')
-    #將 group list(串列)中的元素,將各組組長網站跟倉儲依序印出來 
+    #將 group list(串列)中的元素,將網站跟倉儲依序印出來 
     for j in range(2,18,2):
         #設一個範圍,(2到18,每次加2,但不能大於18)
         try:
-            print('&lt;p&gt;'+group[j]+' | Website:'+'&lt;a href="https://'+group[j]+'.github.io/cd2021'+'"&gt;'+group[j]+'&lt;/a&gt;'+' | Repository:'+'&lt;a href="https://github.com/'+group[j]+'/cd2021'+'"&gt;'+group[j]+'&lt;/a&gt;'+' | Group Website:'+'&lt;a href="https://'+group[j]+'.github.io/stage3-ag'+group[0][9]+'"&gt;'+group[j]+'&lt;/a&gt;&lt;/p&gt;')
-          #將 group list(串列)中的元素,將各組組員網站跟倉儲依序印出來   
+            print('&lt;p&gt;'+group[j]+' | Website:'+'&lt;a href="https://'+group[j]+'.github.io/cd2021'+'"&gt;'+group[j]+'&lt;/a&gt;'+' | Repository:'+'&lt;a href="https://github.com/'+group[j]+'/cd2021'+'"&gt;'+group[j]+'&lt;/a&gt; &lt;/p&gt;')
+          #將 group list(串列)中的元素,將網站跟倉儲依序印出來   
         except:
           continue
            #這邊使用try.....except,因為有一組6個人,如果沒用會失敗,最後用continue是要讓迴圈繼續跑</pre>
 <p>stage3_ag1 | <a href="https://40823131.github.io/stage3-ag1">Website</a> | <a href="https://github.com/40823131/stage3-ag1">Repository</a></p>
-<p>40823131 | Website:<a href="https://40823131.github.io/cd2021">40823131</a> | Repository:<a href="https://github.com/40823131/cd2021">40823131</a> | Group Website:<a href="https://40823131.github.io/stage3-ag1">40823131</a></p>
-<p>a40823112 | Website:<a href="https://a40823112.github.io/cd2021">a40823112</a> | Repository:<a href="https://github.com/a40823112/cd2021">a40823112</a> | Group Website:<a href="https://a40823112.github.io/stage3-ag1">a40823112</a></p>
-<p>40823123 | Website:<a href="https://40823123.github.io/cd2021">40823123</a> | Repository:<a href="https://github.com/40823123/cd2021">40823123</a> | Group Website:<a href="https://40823123.github.io/stage3-ag1">40823123</a></p>
-<p>40823145 | Website:<a href="https://40823145.github.io/cd2021">40823145</a> | Repository:<a href="https://github.com/40823145/cd2021">40823145</a> | Group Website:<a href="https://40823145.github.io/stage3-ag1">40823145</a></p>
-<p>40823136 | Website:<a href="https://40823136.github.io/cd2021">40823136</a> | Repository:<a href="https://github.com/40823136/cd2021">40823136</a> | Group Website:<a href="https://40823136.github.io/stage3-ag1">40823136</a></p>
-<p>40823109 | Website:<a href="https://40823109.github.io/cd2021">40823109</a> | Repository:<a href="https://github.com/40823109/cd2021">40823109</a> | Group Website:<a href="https://40823109.github.io/stage3-ag1">40823109</a></p>
-<p>40823116 | Website:<a href="https://40823116.github.io/cd2021">40823116</a> | Repository:<a href="https://github.com/40823116/cd2021">40823116</a> | Group Website:<a href="https://40823116.github.io/stage3-ag1">40823116</a></p>
-<p>40823108 | Website:<a href="https://40823108.github.io/cd2021">40823108</a> | Repository:<a href="https://github.com/40823108/cd2021">40823108</a> | Group Website:<a href="https://40823108.github.io/stage3-ag1">40823108</a></p>
+<p>40823131 | Website:<a href="https://40823131.github.io/cd2021">40823131</a> | Repository:<a href="https://github.com/40823131/cd2021">40823131</a></p>
+<p>a40823112 | Website:<a href="https://a40823112.github.io/cd2021">a40823112</a> | Repository:<a href="https://github.com/a40823112/cd2021">a40823112</a></p>
+<p>40823123 | Website:<a href="https://40823123.github.io/cd2021">40823123</a> | Repository:<a href="https://github.com/40823123/cd2021">40823123</a></p>
+<p>40823145 | Website:<a href="https://40823145.github.io/cd2021">40823145</a> | Repository:<a href="https://github.com/40823145/cd2021">40823145</a></p>
+<p>40823136 | Website:<a href="https://40823136.github.io/cd2021">40823136</a> | Repository:<a href="https://github.com/40823136/cd2021">40823136</a></p>
+<p>40823109 | Website:<a href="https://40823109.github.io/cd2021">40823109</a> | Repository:<a href="https://github.com/40823109/cd2021">40823109</a></p>
+<p>40823116 | Website:<a href="https://40823116.github.io/cd2021">40823116</a> | Repository:<a href="https://github.com/40823116/cd2021">40823116</a></p>
+<p>40823108 | Website:<a href="https://40823108.github.io/cd2021">40823108</a> | Repository:<a href="https://github.com/40823108/cd2021">40823108</a></p>
 <p>stage3_ag2 | <a href="https://40823151.github.io/stage3-ag2">Website</a> | <a href="https://github.com/40823151/stage3-ag2">Repository</a></p>
-<p>40823151 | Website:<a href="https://40823151.github.io/cd2021">40823151</a> | Repository:<a href="https://github.com/40823151/cd2021">40823151</a> | Group Website:<a href="https://40823151.github.io/stage3-ag2">40823151</a></p>
-<p>40623121 | Website:<a href="https://40623121.github.io/cd2021">40623121</a> | Repository:<a href="https://github.com/40623121/cd2021">40623121</a> | Group Website:<a href="https://40623121.github.io/stage3-ag2">40623121</a></p>
-<p>40871106 | Website:<a href="https://40871106.github.io/cd2021">40871106</a> | Repository:<a href="https://github.com/40871106/cd2021">40871106</a> | Group Website:<a href="https://40871106.github.io/stage3-ag2">40871106</a></p>
-<p>40823102 | Website:<a href="https://40823102.github.io/cd2021">40823102</a> | Repository:<a href="https://github.com/40823102/cd2021">40823102</a> | Group Website:<a href="https://40823102.github.io/stage3-ag2">40823102</a></p>
-<p>40823104 | Website:<a href="https://40823104.github.io/cd2021">40823104</a> | Repository:<a href="https://github.com/40823104/cd2021">40823104</a> | Group Website:<a href="https://40823104.github.io/stage3-ag2">40823104</a></p>
-<p>40823106 | Website:<a href="https://40823106.github.io/cd2021">40823106</a> | Repository:<a href="https://github.com/40823106/cd2021">40823106</a> | Group Website:<a href="https://40823106.github.io/stage3-ag2">40823106</a></p>
-<p>40823101 | Website:<a href="https://40823101.github.io/cd2021">40823101</a> | Repository:<a href="https://github.com/40823101/cd2021">40823101</a> | Group Website:<a href="https://40823101.github.io/stage3-ag2">40823101</a></p>
-<p>40823132 | Website:<a href="https://40823132.github.io/cd2021">40823132</a> | Repository:<a href="https://github.com/40823132/cd2021">40823132</a> | Group Website:<a href="https://40823132.github.io/stage3-ag2">40823132</a></p>
+<p>40823151 | Website:<a href="https://40823151.github.io/cd2021">40823151</a> | Repository:<a href="https://github.com/40823151/cd2021">40823151</a></p>
+<p>40623121 | Website:<a href="https://40623121.github.io/cd2021">40623121</a> | Repository:<a href="https://github.com/40623121/cd2021">40623121</a></p>
+<p>40871106 | Website:<a href="https://40871106.github.io/cd2021">40871106</a> | Repository:<a href="https://github.com/40871106/cd2021">40871106</a></p>
+<p>40823102 | Website:<a href="https://40823102.github.io/cd2021">40823102</a> | Repository:<a href="https://github.com/40823102/cd2021">40823102</a></p>
+<p>40823104 | Website:<a href="https://40823104.github.io/cd2021">40823104</a> | Repository:<a href="https://github.com/40823104/cd2021">40823104</a></p>
+<p>40823106 | Website:<a href="https://40823106.github.io/cd2021">40823106</a> | Repository:<a href="https://github.com/40823106/cd2021">40823106</a></p>
+<p>40823101 | Website:<a href="https://40823101.github.io/cd2021">40823101</a> | Repository:<a href="https://github.com/40823101/cd2021">40823101</a></p>
+<p>40823132 | Website:<a href="https://40823132.github.io/cd2021">40823132</a> | Repository:<a href="https://github.com/40823132/cd2021">40823132</a></p>
 <p>stage3_ag3 | <a href="https://40823119.github.io/stage3-ag3">Website</a> | <a href="https://github.com/40823119/stage3-ag3">Repository</a></p>
-<p>40823119 | Website:<a href="https://40823119.github.io/cd2021">40823119</a> | Repository:<a href="https://github.com/40823119/cd2021">40823119</a> | Group Website:<a href="https://40823119.github.io/stage3-ag3">40823119</a></p>
-<p>40823150 | Website:<a href="https://40823150.github.io/cd2021">40823150</a> | Repository:<a href="https://github.com/40823150/cd2021">40823150</a> | Group Website:<a href="https://40823150.github.io/stage3-ag3">40823150</a></p>
-<p>40823103 | Website:<a href="https://40823103.github.io/cd2021">40823103</a> | Repository:<a href="https://github.com/40823103/cd2021">40823103</a> | Group Website:<a href="https://40823103.github.io/stage3-ag3">40823103</a></p>
-<p>40823107 | Website:<a href="https://40823107.github.io/cd2021">40823107</a> | Repository:<a href="https://github.com/40823107/cd2021">40823107</a> | Group Website:<a href="https://40823107.github.io/stage3-ag3">40823107</a></p>
-<p>40523252 | Website:<a href="https://40523252.github.io/cd2021">40523252</a> | Repository:<a href="https://github.com/40523252/cd2021">40523252</a> | Group Website:<a href="https://40523252.github.io/stage3-ag3">40523252</a></p>
-<p>40823154 | Website:<a href="https://40823154.github.io/cd2021">40823154</a> | Repository:<a href="https://github.com/40823154/cd2021">40823154</a> | Group Website:<a href="https://40823154.github.io/stage3-ag3">40823154</a></p>
+<p>40823119 | Website:<a href="https://40823119.github.io/cd2021">40823119</a> | Repository:<a href="https://github.com/40823119/cd2021">40823119</a></p>
+<p>40823150 | Website:<a href="https://40823150.github.io/cd2021">40823150</a> | Repository:<a href="https://github.com/40823150/cd2021">40823150</a></p>
+<p>40823103 | Website:<a href="https://40823103.github.io/cd2021">40823103</a> | Repository:<a href="https://github.com/40823103/cd2021">40823103</a></p>
+<p>40823107 | Website:<a href="https://40823107.github.io/cd2021">40823107</a> | Repository:<a href="https://github.com/40823107/cd2021">40823107</a></p>
+<p>40523252 | Website:<a href="https://40523252.github.io/cd2021">40523252</a> | Repository:<a href="https://github.com/40523252/cd2021">40523252</a></p>
+<p>40823154 | Website:<a href="https://40823154.github.io/cd2021">40823154</a> | Repository:<a href="https://github.com/40823154/cd2021">40823154</a></p>
 <p>stage3_ag4 | <a href="https://40823142.github.io/stage3-ag4">Website</a> | <a href="https://github.com/40823142/stage3-ag4">Repository</a></p>
-<p>40823142 | Website:<a href="https://40823142.github.io/cd2021">40823142</a> | Repository:<a href="https://github.com/40823142/cd2021">40823142</a> | Group Website:<a href="https://40823142.github.io/stage3-ag4">40823142</a></p>
-<p>40823144 | Website:<a href="https://40823144.github.io/cd2021">40823144</a> | Repository:<a href="https://github.com/40823144/cd2021">40823144</a> | Group Website:<a href="https://40823144.github.io/stage3-ag4">40823144</a></p>
-<p>40823127 | Website:<a href="https://40823127.github.io/cd2021">40823127</a> | Repository:<a href="https://github.com/40823127/cd2021">40823127</a> | Group Website:<a href="https://40823127.github.io/stage3-ag4">40823127</a></p>
-<p>40823148 | Website:<a href="https://40823148.github.io/cd2021">40823148</a> | Repository:<a href="https://github.com/40823148/cd2021">40823148</a> | Group Website:<a href="https://40823148.github.io/stage3-ag4">40823148</a></p>
-<p>40823121 | Website:<a href="https://40823121.github.io/cd2021">40823121</a> | Repository:<a href="https://github.com/40823121/cd2021">40823121</a> | Group Website:<a href="https://40823121.github.io/stage3-ag4">40823121</a></p>
-<p>40823135 | Website:<a href="https://40823135.github.io/cd2021">40823135</a> | Repository:<a href="https://github.com/40823135/cd2021">40823135</a> | Group Website:<a href="https://40823135.github.io/stage3-ag4">40823135</a></p>
-<p>40823114 | Website:<a href="https://40823114.github.io/cd2021">40823114</a> | Repository:<a href="https://github.com/40823114/cd2021">40823114</a> | Group Website:<a href="https://40823114.github.io/stage3-ag4">40823114</a></p>
-<p>40823146 | Website:<a href="https://40823146.github.io/cd2021">40823146</a> | Repository:<a href="https://github.com/40823146/cd2021">40823146</a> | Group Website:<a href="https://40823146.github.io/stage3-ag4">40823146</a></p>
+<p>40823142 | Website:<a href="https://40823142.github.io/cd2021">40823142</a> | Repository:<a href="https://github.com/40823142/cd2021">40823142</a></p>
+<p>40823144 | Website:<a href="https://40823144.github.io/cd2021">40823144</a> | Repository:<a href="https://github.com/40823144/cd2021">40823144</a></p>
+<p>40823127 | Website:<a href="https://40823127.github.io/cd2021">40823127</a> | Repository:<a href="https://github.com/40823127/cd2021">40823127</a></p>
+<p>40823148 | Website:<a href="https://40823148.github.io/cd2021">40823148</a> | Repository:<a href="https://github.com/40823148/cd2021">40823148</a></p>
+<p>40823121 | Website:<a href="https://40823121.github.io/cd2021">40823121</a> | Repository:<a href="https://github.com/40823121/cd2021">40823121</a></p>
+<p>40823135 | Website:<a href="https://40823135.github.io/cd2021">40823135</a> | Repository:<a href="https://github.com/40823135/cd2021">40823135</a></p>
+<p>40823114 | Website:<a href="https://40823114.github.io/cd2021">40823114</a> | Repository:<a href="https://github.com/40823114/cd2021">40823114</a></p>
+<p>40823146 | Website:<a href="https://40823146.github.io/cd2021">40823146</a> | Repository:<a href="https://github.com/40823146/cd2021">40823146</a></p>
 <p>stage3_ag5 | <a href="https://40823111.github.io/stage3-ag5">Website</a> | <a href="https://github.com/40823111/stage3-ag5">Repository</a></p>
-<p>40823111 | Website:<a href="https://40823111.github.io/cd2021">40823111</a> | Repository:<a href="https://github.com/40823111/cd2021">40823111</a> | Group Website:<a href="https://40823111.github.io/stage3-ag5">40823111</a></p>
-<p>40823115 | Website:<a href="https://40823115.github.io/cd2021">40823115</a> | Repository:<a href="https://github.com/40823115/cd2021">40823115</a> | Group Website:<a href="https://40823115.github.io/stage3-ag5">40823115</a></p>
-<p>40823128 | Website:<a href="https://40823128.github.io/cd2021">40823128</a> | Repository:<a href="https://github.com/40823128/cd2021">40823128</a> | Group Website:<a href="https://40823128.github.io/stage3-ag5">40823128</a></p>
-<p>40823120 | Website:<a href="https://40823120.github.io/cd2021">40823120</a> | Repository:<a href="https://github.com/40823120/cd2021">40823120</a> | Group Website:<a href="https://40823120.github.io/stage3-ag5">40823120</a></p>
-<p>40823140 | Website:<a href="https://40823140.github.io/cd2021">40823140</a> | Repository:<a href="https://github.com/40823140/cd2021">40823140</a> | Group Website:<a href="https://40823140.github.io/stage3-ag5">40823140</a></p>
-<p>40823124 | Website:<a href="https://40823124.github.io/cd2021">40823124</a> | Repository:<a href="https://github.com/40823124/cd2021">40823124</a> | Group Website:<a href="https://40823124.github.io/stage3-ag5">40823124</a></p>
-<p>40823139 | Website:<a href="https://40823139.github.io/cd2021">40823139</a> | Repository:<a href="https://github.com/40823139/cd2021">40823139</a> | Group Website:<a href="https://40823139.github.io/stage3-ag5">40823139</a></p>
-<p>40823126 | Website:<a href="https://40823126.github.io/cd2021">40823126</a> | Repository:<a href="https://github.com/40823126/cd2021">40823126</a> | Group Website:<a href="https://40823126.github.io/stage3-ag5">40823126</a></p>
+<p>40823111 | Website:<a href="https://40823111.github.io/cd2021">40823111</a> | Repository:<a href="https://github.com/40823111/cd2021">40823111</a></p>
+<p>40823115 | Website:<a href="https://40823115.github.io/cd2021">40823115</a> | Repository:<a href="https://github.com/40823115/cd2021">40823115</a></p>
+<p>40823128 | Website:<a href="https://40823128.github.io/cd2021">40823128</a> | Repository:<a href="https://github.com/40823128/cd2021">40823128</a></p>
+<p>40823120 | Website:<a href="https://40823120.github.io/cd2021">40823120</a> | Repository:<a href="https://github.com/40823120/cd2021">40823120</a></p>
+<p>40823140 | Website:<a href="https://40823140.github.io/cd2021">40823140</a> | Repository:<a href="https://github.com/40823140/cd2021">40823140</a></p>
+<p>40823124 | Website:<a href="https://40823124.github.io/cd2021">40823124</a> | Repository:<a href="https://github.com/40823124/cd2021">40823124</a></p>
+<p>40823139 | Website:<a href="https://40823139.github.io/cd2021">40823139</a> | Repository:<a href="https://github.com/40823139/cd2021">40823139</a></p>
+<p>40823126 | Website:<a href="https://40823126.github.io/cd2021">40823126</a> | Repository:<a href="https://github.com/40823126/cd2021">40823126</a></p>
 <p>stage3_ag6 | <a href="https://40823152.github.io/stage3-ag6">Website</a> | <a href="https://github.com/40823152/stage3-ag6">Repository</a></p>
-<p>40823152 | Website:<a href="https://40823152.github.io/cd2021">40823152</a> | Repository:<a href="https://github.com/40823152/cd2021">40823152</a> | Group Website:<a href="https://40823152.github.io/stage3-ag6">40823152</a></p>
-<p>40823110 | Website:<a href="https://40823110.github.io/cd2021">40823110</a> | Repository:<a href="https://github.com/40823110/cd2021">40823110</a> | Group Website:<a href="https://40823110.github.io/stage3-ag6">40823110</a></p>
-<p>40823122 | Website:<a href="https://40823122.github.io/cd2021">40823122</a> | Repository:<a href="https://github.com/40823122/cd2021">40823122</a> | Group Website:<a href="https://40823122.github.io/stage3-ag6">40823122</a></p>
-<p>40823125 | Website:<a href="https://40823125.github.io/cd2021">40823125</a> | Repository:<a href="https://github.com/40823125/cd2021">40823125</a> | Group Website:<a href="https://40823125.github.io/stage3-ag6">40823125</a></p>
-<p>40823117 | Website:<a href="https://40823117.github.io/cd2021">40823117</a> | Repository:<a href="https://github.com/40823117/cd2021">40823117</a> | Group Website:<a href="https://40823117.github.io/stage3-ag6">40823117</a></p>
-<p>40823129 | Website:<a href="https://40823129.github.io/cd2021">40823129</a> | Repository:<a href="https://github.com/40823129/cd2021">40823129</a> | Group Website:<a href="https://40823129.github.io/stage3-ag6">40823129</a></p>
-<p>40823149 | Website:<a href="https://40823149.github.io/cd2021">40823149</a> | Repository:<a href="https://github.com/40823149/cd2021">40823149</a> | Group Website:<a href="https://40823149.github.io/stage3-ag6">40823149</a></p>
-<p>40823153 | Website:<a href="https://40823153.github.io/cd2021">40823153</a> | Repository:<a href="https://github.com/40823153/cd2021">40823153</a> | Group Website:<a href="https://40823153.github.io/stage3-ag6">40823153</a></p>
+<p>40823152 | Website:<a href="https://40823152.github.io/cd2021">40823152</a> | Repository:<a href="https://github.com/40823152/cd2021">40823152</a></p>
+<p>40823110 | Website:<a href="https://40823110.github.io/cd2021">40823110</a> | Repository:<a href="https://github.com/40823110/cd2021">40823110</a></p>
+<p>40823122 | Website:<a href="https://40823122.github.io/cd2021">40823122</a> | Repository:<a href="https://github.com/40823122/cd2021">40823122</a></p>
+<p>40823125 | Website:<a href="https://40823125.github.io/cd2021">40823125</a> | Repository:<a href="https://github.com/40823125/cd2021">40823125</a></p>
+<p>40823117 | Website:<a href="https://40823117.github.io/cd2021">40823117</a> | Repository:<a href="https://github.com/40823117/cd2021">40823117</a></p>
+<p>40823129 | Website:<a href="https://40823129.github.io/cd2021">40823129</a> | Repository:<a href="https://github.com/40823129/cd2021">40823129</a></p>
+<p>40823149 | Website:<a href="https://40823149.github.io/cd2021">40823149</a> | Repository:<a href="https://github.com/40823149/cd2021">40823149</a></p>
+<p>40823153 | Website:<a href="https://40823153.github.io/cd2021">40823153</a> | Repository:<a href="https://github.com/40823153/cd2021">40823153</a></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"></pre>
 <p></p>
 <br />w10 << <a href='w10.html'>Previous</a> <a href='task2.html'>Next</a> >> task2</div>
         
