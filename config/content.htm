@@ -181,7 +181,7 @@ for i in range(len(data)):
 <p>40823153 | Website:<a href="https://40823153.github.io/cd2021">40823153</a> | Repository:<a href="https://github.com/40823153/cd2021">40823153</a></p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"></pre>
 <p></p>
-<h3>task2</h3>
+<h3>task2-1</h3>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/cvEFvUINdog" title="YouTube video player" width="560"></iframe></p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import sim as vrep
 import sys
@@ -212,6 +212,33 @@ errorCode=vrep.simxSetJointTargetVelocity(clientID,handle1,1, vrep.simx_opmode_o
 errorCode=vrep.simxSetJointTargetVelocity(clientID,handle2,0, vrep.simx_opmode_oneshot_wait)
 errorCode=vrep.simxSetJointTargetVelocity(clientID,handle3,1, vrep.simx_opmode_oneshot_wait)
 errorCode=vrep.simxSetJointTargetVelocity(clientID,handle4,0, vrep.simx_opmode_oneshot_wait)
-errorCode=vrep.simxSetJointTargetVelocity(clientID,handle5,0.02, vrep.simx_opmode_oneshot_wait)
-
+errorCode=vrep.simxSetJointTargetVelocity(clientID,handle5,0.02, vrep.simx_opmode_oneshot_wait)</pre>
+<h3>task2-2</h3>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/fV1A4K2T6lM" title="YouTube video player" width="560"></iframe></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import sim as vrep
+import sys
+# child threaded script: 
+#simExtRemoteApiStart(19999)
+ 
+vrep.simxFinish(-1)
+ 
+clientID = vrep.simxStart('127.0.0.1', 19999, True, True, 5000, 5)
+ 
+if clientID!= -1:
+    print("Connected to remote server")
+else:
+    print('Connection not successful')
+    sys.exit('Could not connect')
+ 
+errorCode,left_motor_handle=vrep.simxGetObjectHandle(clientID,'bubbleRob_leftMotor',vrep.simx_opmode_oneshot_wait)
+ 
+errorCode,right_motor_handle=vrep.simxGetObjectHandle(clientID,'bubbleRob_rightMotor',vrep.simx_opmode_oneshot_wait)
+ 
+if errorCode == -1:
+    print('Can not find left or right motor')
+    sys.exit()
+ 
+errorCode=vrep.simxSetJointTargetVelocity(clientID,left_motor_handle,0, vrep.simx_opmode_oneshot_wait)
+errorCode=vrep.simxSetJointTargetVelocity(clientID,right_motor_handle,-2, vrep.simx_opmode_oneshot_wait)
 </pre>
+<p><br/><br/></p>
