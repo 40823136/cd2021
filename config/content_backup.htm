@@ -214,6 +214,38 @@ errorCode=vrep.simxSetJointTargetVelocity(clientID,handle3,1, vrep.simx_opmode_o
 errorCode=vrep.simxSetJointTargetVelocity(clientID,handle4,0, vrep.simx_opmode_oneshot_wait)
 errorCode=vrep.simxSetJointTargetVelocity(clientID,handle5,0.02, vrep.simx_opmode_oneshot_wait)</pre>
 <h3>task2-2</h3>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/c5KH8LNhzJQ" title="YouTube video player" width="560"></iframe></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import sim as vrep
+import sys
+import math
+# child threaded script: 
+#simExtRemoteApiStart(19999)
+ 
+vrep.simxFinish(-1)
+ 
+clientID = vrep.simxStart('127.0.0.1', 19999, True, True, 5000, 5)
+ 
+if clientID!= -1:
+    print("Connected to remote server")
+else:
+    print('Connection not successful')
+    sys.exit('Could not connect')
+    
+
+ 
+vrep.simxStartSimulation(clientID, vrep.simx_opmode_oneshot)
+ 
+RC1,handle1 = vrep.simxGetObjectHandle(clientID, 'motor1', vrep.simx_opmode_blocking)
+RC2,handle2 = vrep.simxGetObjectHandle(clientID, 'motor2', vrep.simx_opmode_blocking)
+RC3,handle3 = vrep.simxGetObjectHandle(clientID, 'motor3', vrep.simx_opmode_blocking)
+RC4,handle4 = vrep.simxGetObjectHandle(clientID, 'motor4', vrep.simx_opmode_blocking)
+ 
+vrep.simxSetJointTargetPosition(clientID,handle1,0*math.pi/180,vrep.simx_opmode_oneshot_wait)
+vrep.simxSetJointTargetPosition(clientID,handle2,30*math.pi/180,vrep.simx_opmode_oneshot_wait)
+vrep.simxSetJointTargetPosition(clientID,handle3,0*math.pi/180,vrep.simx_opmode_oneshot_wait)
+vrep.simxSetJointTargetPosition(clientID,handle4,90*math.pi/180,vrep.simx_opmode_oneshot_wait)</pre>
+<p>目前還出現一個問題,motor2還無法順利作動還在找哪裡錯誤</p>
+<h3>task2-3</h3>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/fV1A4K2T6lM" title="YouTube video player" width="560"></iframe></p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import sim as vrep
 import sys
