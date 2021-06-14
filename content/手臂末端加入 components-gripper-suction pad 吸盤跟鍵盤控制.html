@@ -133,13 +133,38 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">w5 << <a href='w5.html'>Previous</a> <a href='w6.html'>Next</a> >> w6<br /><h1>stage2組員</h1>
-<p><span> </span><a href="http://github.com/40823116/cd2021">40823116 repo</a><span><span> </span><span> </span></span><a href="http://40823116.github.io/cd2021">40823116 site</a></p>
-<p><span><span> </span></span><a href="http://github.com/40823123/cd2021">40823123 repo</a><span><span> </span><span> </span></span><a href="http://40823123.github.io/cd2021">40823123 site</a></p>
-<p><span><span> </span></span><a href="http://github.com/40823131/cd2021">40823131 repo</a><span><span> </span><span> </span></span><a href="http://40823131.github.io/cd2021">40823131 site</a></p>
-<p><span><span> </span></span><a href="http://github.com/40823136/cd2021">40823136 repo</a><span><span> </span><span> </span></span><a href="http://40823136.github.io/cd2021">40823136 site</a></p>
-<p></p>
-<br />w5 << <a href='w5.html'>Previous</a> <a href='w6.html'>Next</a> >> w6</div>
+    <div id="tipue_search_content">建立 CoppeliaSim 4.1.0 MTB robot 場景 << <a href='建立 CoppeliaSim 4.1.0 MTB robot 場景.html'>Previous</a> <br /><h1>手臂末端加入 components-gripper-suction pad 吸盤跟鍵盤控制</h1>
+<p>joint1 用r(順時針)跟l(逆時針)來控制讓它轉30度</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"> if (auxiliaryData[1]==108) then
+         rotation1 = rotation1 + 30*deg
+         sim.setJointPosition(axis1, rotation1)
+    end--if r
+    if (auxiliaryData[1]==114) then 
+        rotation1 = rotation1 - 30*deg
+        sim.setJointPosition(axis1, rotation1)
+    end --if l</pre>
+<p><span>joint2 用1(順時針)跟2(逆時針)來控制讓它轉60度</span></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">if (auxiliaryData[1]==49) then
+         rotation1 = rotation1 + 60*deg
+         sim.setJointPosition(axis2, rotation1)
+     end --if 1
+     if (auxiliaryData[1]==50) then
+         rotation1 = rotation1 - 60*deg
+         sim.setJointPosition(axis2, rotation1)
+     end -- if  2</pre>
+<p><span>joint4     用u(向下0.03吸取)跟d(向上0.03)來控制</span></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">if (auxiliaryData[1]==117) then 
+                     rotation3 = rotation3 - 0.03 - calibration 
+                     sim.setJointPosition(axis4,rotation3)
+                end -- if u 
+                if (auxiliaryData[1]==100) then
+                     rotation3 = rotation3 + 0.03 + calibration
+                     sim.setJointPosition(axis4,rotation3)
+                end -- if d
+                 </pre>
+<p><span></span></p>
+<p><span></span></p>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/aek692UXhQQ" title="YouTube video player" width="560"></iframe></p><br />建立 CoppeliaSim 4.1.0 MTB robot 場景 << <a href='建立 CoppeliaSim 4.1.0 MTB robot 場景.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
