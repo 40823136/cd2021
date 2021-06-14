@@ -609,3 +609,37 @@ robot.MoveJ([0,0,0,0,10,-200])</pre>
 <p><a href="https://drive.google.com/drive/folders/1_dPIEnjHaaXSAg-GkuxG3Fuyw_24BQBE?usp=sharing">coppliasim檔案</a></p>
 <p>手臂旋轉各種角度</p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/LIfzGUSu6FM" title="YouTube video player" width="560"></iframe></p>
+<p></p>
+<p></p>
+<h3>手臂末端加入 components-gripper-suction pad 吸盤跟鍵盤控制</h3>
+<p>joint1 用r(順時針)跟l(逆時針)來控制讓它轉30度</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"> if (auxiliaryData[1]==108) then
+         rotation1 = rotation1 + 30*deg
+         sim.setJointPosition(axis1, rotation1)
+    end--if r
+    if (auxiliaryData[1]==114) then 
+        rotation1 = rotation1 - 30*deg
+        sim.setJointPosition(axis1, rotation1)
+    end --if l</pre>
+<p><span>joint2 用1(順時針)跟2(逆時針)來控制讓它轉60度</span></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">if (auxiliaryData[1]==49) then
+         rotation1 = rotation1 + 60*deg
+         sim.setJointPosition(axis2, rotation1)
+     end --if 1
+     if (auxiliaryData[1]==50) then
+         rotation1 = rotation1 - 60*deg
+         sim.setJointPosition(axis2, rotation1)
+     end -- if  2</pre>
+<p><span>joint4     用u(向下0.03吸取)跟d(向上0.03)來控制</span></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">if (auxiliaryData[1]==117) then 
+                     rotation3 = rotation3 - 0.03 - calibration 
+                     sim.setJointPosition(axis4,rotation3)
+                end -- if u 
+                if (auxiliaryData[1]==100) then
+                     rotation3 = rotation3 + 0.03 + calibration
+                     sim.setJointPosition(axis4,rotation3)
+                end -- if d
+                 </pre>
+<p><span></span></p>
+<p><span></span></p>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/aek692UXhQQ" title="YouTube video player" width="560"></iframe></p>
