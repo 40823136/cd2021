@@ -133,13 +133,62 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">w3 << <a href='w3.html'>Previous</a> <a href='投石機(2).html'>Next</a> >> 投石機(2)<br /><h1>投石機(1)</h1>
-<p>Coppeliasim:<a href="https://drive.google.com/drive/u/0/folders/1OYVbl3cYj_-fkuaArtclJRiNoodQHk7H">https://drive.google.com/drive/u/0/folders/1OYVbl3cYj_-fkuaArtclJRiNoodQHk7H</a></p>
-<p>stl檔:<a href="https://drive.google.com/drive/u/0/folders/1bNWk8o1UbAUWI554ASf9u7DNvenfFGik">https://drive.google.com/drive/u/0/folders/1bNWk8o1UbAUWI554ASf9u7DNvenfFGik</a></p>
-<p>我們一開始測試發現輪軸會偏移於是我與隊友討論改成不同軸心</p>
-<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/UNmER-RUnDk" width="560"></iframe></p>
-<p></p>
-<br />w3 << <a href='w3.html'>Previous</a> <a href='投石機(2).html'>Next</a> >> 投石機(2)</div>
+    <div id="tipue_search_content">逆向運動學函式-鍵盤控制與程式迴圈方式 << <a href='逆向運動學函式-鍵盤控制與程式迴圈方式.html'>Previous</a> <br /><h1>Python remote API 逆向運動學函式</h1>
+<p><a href="https://drive.google.com/drive/u/0/folders/15vzdBvgM9nguREHoDuKRRCMRPgmup48h">api 檔案與程式</a></p>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/_1bSgzhGrz8" title="YouTube video player" width="560"></iframe></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import sim as vrep
+import sys
+import time
+import math
+
+vrep.simxFinish(-1)
+clientID = vrep.simxStart('127.0.0.1', 19997, True, True, 5000, 5)
+
+if clientID!= -1:
+    print("Connected to remote server")
+else:
+    print('Connection not successful')
+    
+    vrep.simxStartSimulation(clientID, vrep.simx_opmode_oneshot)
+
+def move(j1,j2,j4):
+    ret,joint1=vrep.simxGetObjectHandle(clientID,"joint1",vrep.simx_opmode_blocking)
+    ret,joint2=vrep.simxGetObjectHandle(clientID,"joint2",vrep.simx_opmode_blocking)
+    ret,joint4=vrep.simxGetObjectHandle(clientID,"joint4",vrep.simx_opmode_blocking)
+    jointHandle=[joint1,joint2,joint4]
+    j=[j1*math.pi/180,j2*math.pi/180,j4*math.pi/180]
+    for i in range(3):
+        vrep.simxSetJointPosition(clientID,jointHandle[i],j[i],vrep.simx_opmode_oneshot)
+        time.sleep(0.5)
+def suck():
+    vrep.simxSetIntegerSignal(clientID,"active",1,vrep.simx_opmode_oneshot_wait)
+def quit():
+    vrep.simxSetIntegerSignal(clientID,"active",0,vrep.simx_opmode_oneshot_wait)
+
+
+
+while True:
+    move(0,0,0)
+    quit()
+    move(0,0,-2)
+    suck()
+    
+    move(40.9472,-68.978,0)
+    quit()
+   
+    move(40.9472,-68.978,0)
+    move(40.9472,-68.978,-2)
+    suck()
+    move(40.9472,-68.978,0)
+    
+    move(-158.2529,-89.6799,0)
+    quit()
+   
+    move(-158.2529,-89.6799,0)
+    move(-158.2529,-89.6799,-2)
+    suck()
+    move(-158.2529,-89.6799,0)</pre>
+<p></p><br />逆向運動學函式-鍵盤控制與程式迴圈方式 << <a href='逆向運動學函式-鍵盤控制與程式迴圈方式.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
