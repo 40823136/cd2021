@@ -648,12 +648,70 @@ robot.MoveJ([0,0,0,0,10,-200])</pre>
 <p><span> </span><img alt="" height="268" src="/images/72214.jpg" width="352"/></p>
 <p><span>(-0.3, -0.55, 0.05)</span></p>
 <p><img alt="" height="268" src="/images/72215.jpg" width="352"/></p>
+<p><strong>鍵盤控制</strong></p>
 <p><a href="https://drive.google.com/drive/u/0/folders/1_dPIEnjHaaXSAg-GkuxG3Fuyw_24BQBE">Inverse Kinematics</a></p>
 <p></p>
-<p><strong>鍵盤控制</strong></p>
+<p></p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/ha5eOqg6nDQ" title="YouTube video player" width="560"></iframe></p>
 <p>迴圈方式</p>
+<p><a href="https://drive.google.com/drive/u/0/folders/1_dPIEnjHaaXSAg-GkuxG3Fuyw_24BQBE">loap</a></p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/_1bSgzhGrz8" title="YouTube video player" width="560"></iframe></p>
 <p>重複執行取這兩個座標的方法</p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">while sim.getSimulationState()~=sim.simulation_advancing_abouttostopre do</pre>
+<p></p>
+<h3>Python remote API 逆向運動學函式</h3>
+<p><a href="https://drive.google.com/drive/u/0/folders/15vzdBvgM9nguREHoDuKRRCMRPgmup48h">api 檔案與程式</a></p>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/_1bSgzhGrz8" title="YouTube video player" width="560"></iframe></p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import sim as vrep
+import sys
+import time
+import math
+
+vrep.simxFinish(-1)
+clientID = vrep.simxStart('127.0.0.1', 19997, True, True, 5000, 5)
+
+if clientID!= -1:
+    print("Connected to remote server")
+else:
+    print('Connection not successful')
+    
+    vrep.simxStartSimulation(clientID, vrep.simx_opmode_oneshot)
+
+def move(j1,j2,j4):
+    ret,joint1=vrep.simxGetObjectHandle(clientID,"joint1",vrep.simx_opmode_blocking)
+    ret,joint2=vrep.simxGetObjectHandle(clientID,"joint2",vrep.simx_opmode_blocking)
+    ret,joint4=vrep.simxGetObjectHandle(clientID,"joint4",vrep.simx_opmode_blocking)
+    jointHandle=[joint1,joint2,joint4]
+    j=[j1*math.pi/180,j2*math.pi/180,j4*math.pi/180]
+    for i in range(3):
+        vrep.simxSetJointPosition(clientID,jointHandle[i],j[i],vrep.simx_opmode_oneshot)
+        time.sleep(0.5)
+def suck():
+    vrep.simxSetIntegerSignal(clientID,"active",1,vrep.simx_opmode_oneshot_wait)
+def quit():
+    vrep.simxSetIntegerSignal(clientID,"active",0,vrep.simx_opmode_oneshot_wait)
+
+
+
+while True:
+    move(0,0,0)
+    quit()
+    move(0,0,-2)
+    suck()
+    
+    move(40.9472,-68.978,0)
+    quit()
+   
+    move(40.9472,-68.978,0)
+    move(40.9472,-68.978,-2)
+    suck()
+    move(40.9472,-68.978,0)
+    
+    move(-158.2529,-89.6799,0)
+    quit()
+   
+    move(-158.2529,-89.6799,0)
+    move(-158.2529,-89.6799,-2)
+    suck()
+    move(-158.2529,-89.6799,0)</pre>
 <p></p>
